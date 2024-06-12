@@ -30,7 +30,8 @@ var series = container.children.push(am5hierarchy.ForceDirected.new(root, {
   idField: "id",
   linkWithField: "linkWith",
   minRadius: am5.percent(5),
-  maxRadius: am5.percent(10)
+  maxRadius: am5.percent(6),
+  manyBodyStrength: -60
 }));
 
 
@@ -94,9 +95,7 @@ series.data.setAll([{
           value: 14
         }]
       }]
-    }, {
-      // Removed "C2B1" and "C2C1" children  
-    }]
+    },]
   }, {
     name: "Janice",
     id: "janice",
