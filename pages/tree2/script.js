@@ -31,7 +31,9 @@ var series = container.children.push(am5hierarchy.ForceDirected.new(root, {
   linkWithField: "linkWith",
   minRadius: am5.percent(5),
   maxRadius: am5.percent(6),
-  manyBodyStrength: -60
+  manyBodyStrength: -60,
+  centerStrength: 0.5,
+  linkWithStrength: 0.5
 }));
 
 
